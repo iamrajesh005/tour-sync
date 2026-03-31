@@ -23,7 +23,7 @@ module.exports.newUser= async (req, res)=>{
         if(err){
             return next(err);
         } else{
-            
+            console
             return res.redirect("/listings");
         }
     })
