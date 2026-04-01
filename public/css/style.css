@@ -1,3 +1,17 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+
 .navbar-brand i{
     font-size: 25px;
 }
