@@ -22,7 +22,7 @@
     </div>
     </div>
     <div class="btns col-3">
-        <% if(currUser && currUser._id.equals(listing.owner[0]._id)){ %>
+        <% if(req.user._id && req.user._id.equals(listing.owner[0]._id)){ %>
           <a href="/listings/<%= listing._id %>/edit" class="btn btn-edit">edit</a>
            <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
              <button class="btn del">Delete</button>
